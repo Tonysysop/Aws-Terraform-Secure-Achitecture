@@ -16,23 +16,23 @@ resource "aws_eip" "web_eip_2" {
 
 # NatGateway Resource 
 resource "aws_nat_gateway" "web_natgway_1" {
-  subnet_id = aws_subnet.public_subnet_1.id
+  subnet_id     = aws_subnet.public_subnet_1.id
   allocation_id = aws_eip.web_eip_1.id
 
   tags = {
     Name = "web_natgway_1"
   }
 
-  depends_on = [ aws_internet_gateway.web_igw ]
+  depends_on = [aws_internet_gateway.web_igw]
 }
 
 resource "aws_nat_gateway" "web_natgway_2" {
-  subnet_id = aws_subnet.public_subnet_2.id
+  subnet_id     = aws_subnet.public_subnet_2.id
   allocation_id = aws_eip.web_eip_2.id
 
   tags = {
     Name = "web_natgway_2"
   }
 
-  depends_on = [ aws_internet_gateway.web_igw ]
+  depends_on = [aws_internet_gateway.web_igw]
 }

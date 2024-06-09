@@ -2,6 +2,8 @@
 
 This project is aimed at creating a highly secure and highly available network infrastructure on AWS using Terraform. The main goals are to ensure robust security and high availability of the infrastructure.
 
+![alt text](2-tier-architecture.png)
+
 ## Project Goals
 
 1. **Highly Secure Network Infrastructure (VPC)**:
