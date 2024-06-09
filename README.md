@@ -4,6 +4,7 @@
 
 This project is aimed at creating a highly secure and highly available network infrastructure on AWS using Terraform. The main goals are to ensure robust security and high availability of the infrastructure.
 
+
 Deploying the architecture shown in the image using Terraform involves several steps, creating resources such as VPC, subnets, route tables, NAT gateways, security groups, an auto-scaling group, and a load balancer. Below are the high-level steps and corresponding Terraform resources required:
 
 ## High-Level Steps:
@@ -16,6 +17,7 @@ Deploying the architecture shown in the image using Terraform involves several s
 7. Create security groups for the load balancer and the servers.
 8. Set up an Auto Scaling group with EC2 instances in private subnets.
 9. Create an S3 gateway endpoint.
+![alt text](2-tier-architecture.png)
 
 ## Project Goals
 
