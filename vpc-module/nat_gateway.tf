@@ -23,7 +23,6 @@ resource "aws_nat_gateway" "web_natgway_1" {
     Name = "web_natgway_1"
   }
 
-  depends_on = [ aws_internet_gateway.web_igw ]
 }
 
 resource "aws_nat_gateway" "web_natgway_2" {
@@ -34,5 +33,4 @@ resource "aws_nat_gateway" "web_natgway_2" {
     Name = "web_natgway_2"
   }
 
-  depends_on = [ aws_internet_gateway.web_igw ]
 }
