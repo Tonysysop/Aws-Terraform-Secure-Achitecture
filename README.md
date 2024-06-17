@@ -16,7 +16,7 @@ Deploying the architecture shown in the image using Terraform involves several s
 6. Set up an Application Load Balancer in public subnets.
 7. Create security groups for the load balancer and the servers.
 8. Set up an Auto Scaling group with EC2 instances in private subnets.
-9. Create an S3 gateway endpoint.
+
 ![alt text](2-tier-architecture.png)
 
 ## Project Goals
